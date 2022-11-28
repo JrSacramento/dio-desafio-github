@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Problemas na Impressão 3D</title>
+</head>
+<body>
+    <h1><font face="verdana">Problemas Comuns em Impressão 3D</font></h1>
+    <hr />
+    <h2><u><i>Impressora de Filamento</i></u></h2>
+    <ol>
+        <li><strong>Desalinhamento de Camadas</strong></li>
+            <p><ul><Strong>Descrição do Problema:</ul></Strong><blockquote> Você foi dar uma volta e quando voltou a peça 
+                        estava toda desalinhada?</blockquote></p>
+            <p><ul><strong>Causa Geral:</ul></strong> <blockquote> Algum problema mecânico ou de software fez com que a 
+                        impressora perdesse a direção. 
+                        A maioria das impressoras não possui um sistema que indique a real posição do bico, 
+                        portanto caso por algum motivo um deslocamento ocorra na peça a extrusora irá continuar 
+                        imprimindo como se a peça estivesse lá.</blockquote></p>
+        <li><strong> Empenamento</strong> <small>(Warping)</small></li>
+            <p><ul><strong>Descrição do Problema:</strong></ul><blockquote> As bordas da sua peça que tocam a mesa estão ficando empenadas. 
+                        Elas se soltam da mesa seja no início, meio ou fim da impressão.</blockquote></p>
+            <p><ul><strong>Causa Geral:</strong></ul><blockquote> Isso ocorre pois o plástico tende a encolher com o resfriamento. 
+                        Para peças pequenas pode não fazer diferença. Porém, para as grandes pode equivaler a vários milímetros de retração.</blockquote></p>
+        <li><strong> Falhas na Camada</strong> <mark>Inferior</mark></li>
+            </p>O hotend está se movendo mas o filamento não sai? 
+                        Ou talvez até saia mas em uma quantidade aparentemente bem menor do que deveria sair?</blockquote></p>
+            <p><ul><strong>Causa Geral:</strong></ul><blockquote> O filamento precisa de um espaço bem específico para que ao ser ejetado 
+                        pelo bico ele seja "amassado", se esse espaço for muito curto o filamento não conseguirá sair 
+                        com facilidade na primeira camada.</blockquote>
+        <li><strong> Falhas na Camada</strong> <mark>Superior</mark></li>
+            <p><ul><strong>Descrição do Problema:</strong></ul><blockquote>O topo da sua peça está com buracos? 
+                Talvez quando você aperta o topo com o dedo pode sentir que está frágil. Ou talvez até parece resistente mas 
+                o topo está simplesmente falhado.</blockquote>
+            <p><ul><strong>Causa Geral:</strong></ul><blockquote>Para economizar tempo e filamento, os fatiadores deixam o interior 
+                das peças parcialmente ocos, e as paredes externas sólidas.
+                <p>Esta técnica pode economizar uma enorme quantidade de filamento e tempo e ainda assim criar peças muito 
+                fortes graças a ótimas opções de preenchimento dos fatiadores.</p>                
+                <p>No entanto, dependendo das configurações que está usando, as camadas sólidas do topo da sua impressão
+                podem ficar com lacunas.</p></blockquote>
+        <li><strong> Primeira Camada não Adere a Mesa</strong></li>
+            <p><ul><strong>Descrição do Problema:</strong></ul><blockquote>A 1<sup>ª</sup> camada de filamento solta da mesa 
+                        ou as vezes nem sequer gruda. Muitas vezes o filamento solto esbarra no bico e causa uma bagunça.</blockquote>
+            <p><ul><strong>Causa Geral:</strong></ul><blockquote>  Este é o erro mais comum em impressão 3D <del>(Daaaa!)</del>, ele ocorre pois 
+                existe uma série de pré-requisitos que precisam sem cumpridos para que o filamento grude bem na mesa.</p></blockquote>      
+        <li><strong> Pata de Elefante</strong></li>
+            <p><ul><strong>Descrição do Problema:</strong></ul><blockquote>As bordas da base da sua peça estão maiores do 
+                que deviam estar?</blockquote>
+            <p><ul><strong>Causa Geral:</strong></ul><blockquote>Isso acontece quando as primeiras camadas da impressora ficam exprimidas formando-se então 
+                        a pata de elefante. Isso pode ocorrer quando o bico está muito próximo da mesa ou com peças 
+                        muito pequenas que a base não conseguiu resfriar o bastante antes da próxima camada. </blockquote>
+            <p><ul><strong>Descrição do Problema:</strong></ul><blockquote> Perder uma peça por não se 
+                         prender corretamente na mesa de impressão é um erro comum que pode ser relativamente simples de resolver.</blockquote>
+            <p><ul><strong>Causa Geral:</strong></ul><blockquote>Infelizmente uma peça pode se desprender da impressora 3D a depender 
+                        da sua área de contato com a mesa de impressão e é importante entender o modelo antes de começar o processo. 
+                        <p><strong>Alguns meios de se resolver esse problema são:</strong>
+                            <ul>
+                                <li>Calibrar corretamente a altura do bico extrusor com a mesa de impressão, 
+                                    para garantir que se prenda de forma satisfatória;</li>
+                                <li>Aplicar algum material que consiga grudar a primeira camada com a mesa, 
+                                    como algum tipo de cola ou adesivo como A-bond;</li>
+                                <li>Ajustar a altura da mesa e a distância do bico extrusor;</li>
+                                <li>Limpar corretamente a mesa de impressão, como com o uso de álcool isopropílico.</li>
+                            </ul> 
+                        </p>
+                        O planejamento e projeto são muito importantes neste processo, então fique atento aos pontos de 
+                        ancoragem que podem ser necessários, se sua peça tem poucos pontos de contato na base. 
+                        Durante o planejamento do fatiamento, faça um melhor ajuste. Você pode também fazer o uso do recurso brim. 
+                        <p>Também é importante seguir as recomendações de uso do fabricante de filamento 3d, como temperatura correta da mesa 
+                        e processamento ou extrusão. Alguns filamentos que tem um coeficiente de contração maior, como 
+                        o <abbr title="Acrilonitrila Butadieno Estireno">ABS</abbr> podem precisar de maiores cuidados com ventilação, 
+                        ou ambiente pois a troca abrupta de temperatura pode impactar a delaminação entre camadas e aderência do 
+                        filamento à mesa.</blockquote></p>
+    </ol>
+        <p><strong> Quer mais informações? Acesse:</strong></p>
+        <ul>
+            <li><a href="https://acelera3d.com/erros-3d/">Acelera 3D</a></li>
+            <li><a href="https://3dfila.com.br/blog/40-erros-mais-comuns-de-impressao-3d-que-voce-deve-evitar/">3D Fila</a></li>
+        </ul>
+</body>
+</html>
+
